@@ -1,61 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-image: url("https://images.unsplash.com/photo-1501139083538-0139583c060f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91cmdsYXNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
-    background-size: cover;
-    background-position: center center;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #8AA1B1 100%);;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    font-family: "Merriweather", serif;
+    margin: 0;
     min-height: 100vh;
-    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.quiz-container {
+    background: linear-gradient(70deg, #f5e4d3, #E6AF2E);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+    width: 600px;
+    max-width: 100%;
+}
+
+.quiz-header {
+    padding: 4rem;
+    text-align: center;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
     margin: 0;
 }
 
-#meeting-time {
-    align-items: center;
-    justify-content: center;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-h1{
-    font-weight: bold;
-    font-size: 4rem;
-    color: #FF851B;
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
 }
 
-.container {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+ul li label {
+    cursor: pointer;
 }
 
-.countdown-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+button {
+    background-color: #CD533B;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 1.3rem;
 }
 
-.big-text{
-    font-weight: bold;
-    font-size: 6rem;
-    line-height: 1;
-    margin: 0 2rem;
+button:hover{
+    background-color: #923d2c;
 }
 
-.countdown-el {
-    text-align: center;
-    color: #FF851B;
+button:focus {
+    background-color: #ee6347;
+    outline: none;
 }
 
-.countdown-el span {
-    font-size: 1.5rem;
-    color: #FF851B;
-    font-weight: bold;
+@media screen and (max-width: 430px) {
+    .quiz-container {
+        transform: scale(0.9);
+    }
 }
-
